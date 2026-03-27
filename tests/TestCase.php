@@ -3,7 +3,6 @@
 namespace Maize\Searchable\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Testing\TestResponse;
 use Maize\Searchable\SearchableServiceProvider;
 use Maize\Searchable\Tests\Models\Team;
 use Maize\Searchable\Tests\Models\User;
@@ -11,8 +10,6 @@ use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {
-    public static ?TestResponse $latestResponse = null;
-
     protected function setUp(): void
     {
         parent::setUp();

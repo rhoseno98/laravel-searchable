@@ -8,3 +8,5 @@ parameters:
         - config
         - database
     tmpDir: build/phpstan
+    ignoreErrors:
+        - '#Trait Maize\\Searchable\\HasSearch is used zero times and is not analysed\.#'

@@ -103,6 +103,7 @@ class SearchBuilder extends Builder
      */
     protected function orderSearchQuery(): self
     {
+        /* @phpstan-ignore-next-line */
         return $this->orderBy(function ($query) {
             $tableName = $this->getModel()->getTable();
             $tableKey = $this->getModel()->getKeyName();
